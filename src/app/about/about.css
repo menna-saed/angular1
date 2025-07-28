@@ -1,0 +1,35 @@
+section {
+  background-color: #1abc9c;
+  height: 550px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h2{
+    position: relative;
+    font-size: 2.5rem !important;
+    font-weight: bolder;
+}
+h2::before {
+    content: "";
+    position: absolute;
+    width: 96px;
+    height: 4px;
+    left: 62%;
+    bottom: -23px;
+    background-color: white;
+  }
+  h2::after {
+    content: "";
+    position: absolute;
+    width: 96px;
+    height: 4px;
+    left: 115px;
+    bottom: -23px;
+    background-color: white;
+  }
+  .star_icon{
+    color: white;
+  }

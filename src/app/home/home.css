@@ -1,0 +1,34 @@
+section{
+    padding: 100px;
+    background-color: #1abc9c;
+    position: relative;
+}
+/* .caption{
+    position: relative;
+} */
+/* h1::after{
+    content: "";
+    width: 100px;
+    height: 30px;
+    color: black;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+} */
+.line{
+    width: 7%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 42%;
+}
+.line2{
+    width: 7%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 51%;
+}
+.lines i{
+    color: white;
+}

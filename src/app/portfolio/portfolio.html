@@ -1,0 +1,29 @@
+<div class="container mt-5 mb-5">
+    <div class="caption text-uppercase text-white fs-1 text-center ">
+        <h2>portfolio component
+        </h2>
+
+    </div>
+    <div class="text-center star_icon ms-5">
+        <i class="fa-solid fa-star"></i>
+    </div>
+    <div class="row gy-5 pt-3">
+        @for(img of imgsSrc ;track $index ){
+        <div class="col-md-4">
+            <div class="card">
+                <img [src]="img" (click)="change(img)" class="card-img-top" alt="..." width="100%">
+                <div class="layer">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+
+            </div>
+        </div>
+        }
+       
+
+    </div>
+     <div *ngIf="selectedImage" class="overlay d-flex justify-content-center align-items-center">
+           <img [src]='selectedImage' alt="" width="600px" height="400px" (click)="$event.stopPropagation()" > 
+        </div>
+
+</div>
